@@ -93,4 +93,25 @@ public class EvaluationDAO {
 		}
 		return evaluationList;
 	}
+	
+	// 평가 추천하기
+	public int like(String evaluationID) {
+		String sql = "UPDATE EVALUATION SET likeCount = likeCount + 1 WHERE evaluationID = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, evaluationID);
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {if (conn != null) conn.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (pstmt != null) pstmt.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (rs != null) rs.close();} catch (SQLException e) {e.printStackTrace();}
+		}
+		return -1;	// 데이터베이스 오류
+	}
 }
