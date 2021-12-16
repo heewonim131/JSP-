@@ -1,6 +1,5 @@
 # 📝 [ JSP ] 강의평가 웹 사이트
-JSP로 강의평가(Lecture Evaluation) 웹 사이트를 개발하는 프로젝트입니다.
-<br>
+<img src="https://user-images.githubusercontent.com/92259017/146367274-746bc3c6-821a-4313-b1b7-f59d0e7ea837.png"/>
 
 ## 🔎 목차
 1. 개발환경
@@ -25,7 +24,7 @@ JSP로 강의평가(Lecture Evaluation) 웹 사이트를 개발하는 프로젝�
     - Apache Tomcat 8.5
 
 ## 🎨 구현한 기능
-### 1. 메인화면 웹 디자인
+### 1. 메인화면
 
 <img src="https://user-images.githubusercontent.com/92259017/146367274-746bc3c6-821a-4313-b1b7-f59d0e7ea837.png" width="75%" height="75%"/>
 
