@@ -94,7 +94,7 @@ public class EvaluationDAO {
 		return evaluationList;
 	}
 	
-	// 평가 추천하기
+	// 평가 추천수 증가
 	public int like(String evaluationID) {
 		String sql = "UPDATE EVALUATION SET likeCount = likeCount + 1 WHERE evaluationID = ?";
 		Connection conn = null;
