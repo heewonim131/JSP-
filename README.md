@@ -33,7 +33,8 @@
     <details>
     <summary>1.2. 이메일 인증</summary>
     <br>
-    <img src="https://user-images.githubusercontent.com/92259017/146366832-5dc7e55e-0d94-463e-b859-af9c157b716b.png" width="75%" height="75%"/>     <img src="https://user-images.githubusercontent.com/92259017/146366989-ebb702d6-3ed0-4f26-8130-66963e9ab61f.png" width="75%" height="75%"/>
+    <img src="https://user-images.githubusercontent.com/92259017/146366832-5dc7e55e-0d94-463e-b859-af9c157b716b.png" width="75%" height="75%"/>
+    <img src="https://user-images.githubusercontent.com/92259017/146366989-ebb702d6-3ed0-4f26-8130-66963e9ab61f.png" width="75%" height="75%"/>
     </details>
     <details>
     <summary>1.3. 로그인</summary>
@@ -56,7 +57,8 @@
     <details>
     <summary>2.2. 신고하기</summary>
     <br>
-    <img src="https://user-images.githubusercontent.com/92259017/146367601-a2348377-3e82-4550-b46e-139f9b1785e9.png" width="75%" height="75%"/>     <img src="https://user-images.githubusercontent.com/92259017/146376920-396a01a3-1489-45ab-aacf-4b7fa3fc2149.png" width="75%" height="75%"/>
+    <img src="https://user-images.githubusercontent.com/92259017/146367601-a2348377-3e82-4550-b46e-139f9b1785e9.png" width="75%" height="75%"/>
+    <img src="https://user-images.githubusercontent.com/92259017/146376920-396a01a3-1489-45ab-aacf-4b7fa3fc2149.png" width="75%" height="75%"/>
     </details>
     <details>
     <summary>2.3. 추천하기</summary>
