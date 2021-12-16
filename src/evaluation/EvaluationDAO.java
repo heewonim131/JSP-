@@ -103,7 +103,28 @@ public class EvaluationDAO {
 		try {
 			conn = DatabaseUtil.getConnection();
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, evaluationID);
+			pstmt.setInt(1, Integer.parseInt(evaluationID));
+			return pstmt.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {if (conn != null) conn.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (pstmt != null) pstmt.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (rs != null) rs.close();} catch (SQLException e) {e.printStackTrace();}
+		}
+		return -1;	// 데이터베이스 오류
+	}
+	
+	// 평가 삭제하기
+	public int delete(String evaluationID) {
+		String sql = "DELETE FROM EVALUATION WHERE evaluationID = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, Integer.parseInt(evaluationID));
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
