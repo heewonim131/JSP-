@@ -135,4 +135,28 @@ public class EvaluationDAO {
 		}
 		return -1;	// 데이터베이스 오류
 	}
+	
+	// 평가 작성자 아이디 조회
+	public String getUserID(String evaluationID) {
+		String sql = "SELECT userID FROM EVALUATION WHERE evaluationID = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = DatabaseUtil.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, evaluationID);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				return rs.getString(1);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {if (conn != null) conn.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (pstmt != null) pstmt.close();} catch (SQLException e) {e.printStackTrace();}
+			try {if (rs != null) rs.close();} catch (SQLException e) {e.printStackTrace();}
+		}
+		return null;	// 작성자 아이디 존재하지 않음
+	}
 }
