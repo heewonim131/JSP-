@@ -9,7 +9,6 @@
 ## 🛠 개발환경
 1. 사용언어
     - Java SE 8
-    - JSP
 2. 라이브러리/프레임워크
     - Bootstrap 4
     - jQuery 3.6
